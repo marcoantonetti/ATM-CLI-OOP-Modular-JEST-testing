@@ -10,7 +10,7 @@ async function main() {
     if (account == null) account = await promptCreateAccount(accountName)
     if (account != null) await promptTask(account)
   } catch (e) {
-    CommandLine.print("ERROR: Please try again")
+   
   }
 }
 
@@ -20,7 +20,11 @@ async function promptCreateAccount(accountName) {
   )
 
   if (response === "yes") {
-    return await Account.create(accountName)
+    const account = await Account.create(accountName)
+    console.log('Account created, run node script.js again');
+    return account
+  } else {
+    console.log('Query finished');
   }
 }
 
@@ -44,6 +48,7 @@ async function promptTask(account) {
   }
 
   CommandLine.print(`Your balance is ${account.balance}`)
+  main()
 }
 
 main()

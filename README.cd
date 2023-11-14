@@ -9,6 +9,14 @@ In the FileSystem.js there is a FileSystem class that can read or create txt fil
 
 Finally the Script.js file handles what to do with the user input, calling the properties of this 3 other classes
 
-UNIT TESTS
+TESTS
+Tests are done with jest
 
-The functions of deposit and withdraw in the Account.js had been unit tested -- run --> npm test
+UNIT TEST
+The functions of deposit and withdraw in the Account.js had been unit tested --> npm run test:unit
+
+INTEGRATION TEST
+The functions of create and find had been tested with integration, it tests the proper creation of the .txt account file --> npm run test:int
+
+
+

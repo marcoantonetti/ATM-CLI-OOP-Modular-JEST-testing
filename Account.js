@@ -51,7 +51,6 @@ module.exports = class Account {
 
     await FileSystem.write(account.filePath, 0)
     account.#balance = 0
-
     return account
   }
 }
