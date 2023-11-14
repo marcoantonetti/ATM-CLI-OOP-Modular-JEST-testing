@@ -1,0 +1,14 @@
+ATM CLI PROJECT
+In this text-based user interface ATM, the user can create an account and deposit or withdraw money. The challenge was to make it as OOP and modular as possible. Encapsulating most of the functionalities into the different classes.
+
+In the Account.js there is an Account class with getter and setters and private and static properties (some of which are asyncronous functions). Such as withdraw, deposit, create, load, etc.
+
+In the CommandLine.js there is a CommandLine class that uses the readfile library to ask questions and return the answer in the form of a resolved promise.
+
+In the FileSystem.js there is a FileSystem class that can read or create txt files. Both of this properties are promises.
+
+Finally the Script.js file handles what to do with the user input, calling the properties of this 3 other classes
+
+UNIT TESTS
+
+The functions of deposit and withdraw in the Account.js had been unit tested -- run --> npm test
