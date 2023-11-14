@@ -9,6 +9,9 @@ In the FileSystem.js there is a FileSystem class that can read or create txt fil
 
 Finally the Script.js file handles what to do with the user input, calling the properties of this 3 other classes
 
+RUN
+To start the prompts --> node script.js
+
 TESTS
 Tests are done with jest
 
