@@ -1,5 +1,6 @@
 ATM CLI PROJECT
 In this text-based user interface ATM, the user can create an account and deposit or withdraw money. The challenge was to make it as OOP and modular as possible. Encapsulating most of the functionalities into the different classes.
+I used the fs node.js library to write and read files
 
 In the Account.js there is an Account class with getter and setters and private and static properties (some of which are asyncronous functions). Such as withdraw, deposit, create, load, etc.
 
